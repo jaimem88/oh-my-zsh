@@ -1,5 +1,6 @@
 # custom files
-custom/
+
+myenv-private/
 
 # temp files directories
 cache/

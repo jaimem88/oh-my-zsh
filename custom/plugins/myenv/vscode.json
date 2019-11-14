@@ -1,0 +1,91 @@
+{
+    "terminal.integrated.env.osx": {"GOPRIVATE":"github.com/AssemblyPayments/*"},
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "workbench.colorTheme": "Dracula",
+    "window.zoomLevel": 3,
+    "files.insertFinalNewline": true,
+    "files.eol": "\n",
+    "editor.formatOnSave": false,
+    "[go]": {
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+      "editor.formatOnSave": false,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "code-eol.style": { "opacity": 1.0 },
+    "code-eol.crlfCharacter": "←",
+    "code-eol.returnCharacter": "↵",
+    "code-eol.newlineCharacter": "↓",
+    "go.buildTags": "endtoend backbook skip zipscraper integration purger",
+    "go.lintOnSave": "package",
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": ["--fast", "-D", "scopelint"],
+    "go.autocompleteUnimportedPackages": true,
+    "go.formatTool": "goimports",
+    "go.gocodeFlags": [
+      "-builtin",
+      "-ignore-case",
+      "-unimported-packages",
+      "-exclude-docs"
+    ],
+    "clang-format.language.proto.enable": true,
+    "git.autofetch": false,
+    "editor.renderControlCharacters": true,
+    "breadcrumbs.enabled": true,
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": "\\.go$",
+          "cmd": "fiximports ${file} && goimports -w -local=github.com/AssemblyPayments ${file}",
+          "cmd2": "goimports -w -local=github.com/AssemblyPayments ${file}",
+          "useShortcut": false,
+          "silent": false
+        }
+      ]
+    },
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": false,
+    "gitlens.currentLine.enabled": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "workbench.editor.showTabs": true,
+    "editor.renderWhitespace": "all",
+    "[proto3]": {
+      "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "go.useLanguageServer": true,
+    "vscode_custom_css.imports":[
+      "file:///Users/jaime/dev/synthwave.css"
+    ],
+    "ruby.rubocop.executePath": "/Users/jaime/.rvm/gems/ruby-2.6.3/wrappers/",
+    "rufo.exe": "/Users/jaime/.rvm/gems/ruby-2.6.3/wrappers/rufo",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.openEditors.visible": 0,
+    "[ruby]": {
+      "editor.defaultFormatter": "jnbt.vscode-rufo",
+      "editor.formatOnSave": true,
+  
+    },
+    "ruby.lint": {
+      "rubocop": false,
+      "ruby": false
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[sql]": {
+      "editor.formatOnSave": false,
+      "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+  
