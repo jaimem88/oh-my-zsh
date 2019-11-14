@@ -1,4 +1,4 @@
-export GPG_TTY=$(tty)
+export GPG_TTY=$(tty)<<<<<<< HEAD
 #export JAVA_HOME=$(/usr/libexec/java_home)
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
