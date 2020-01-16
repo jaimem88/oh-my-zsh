@@ -6,6 +6,16 @@ alias jm='cd $JM'
 # You can use whatever you want as an alias, like for Mondays:
 #eval $(thefuck --alias FUCK)
 alias mk='make'
+#GITLAB STUFF
+alias glsite='NO_CONTRACTS=true bundle exec middleman'
+alias grr='gitlab-runner'
+alias ee='cd $EE'
+alias ce='cd $CE'
+alias dev='cd $HOME/dev'
+alias gitlab='cd $HOME/dev/gitlab'
+alias ifactive='ifconfig | pcregrep -M -o '\''^[^\t:]+(?=:([^\n]|\n\t)*status: active)'\'
+alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
+alias update_local_ip='sed -ie "s/LOCAL_IP=.*/LOCAL_IP=$(ip)/" ~/.zshrc'
 
 alias reload='source $HOME/.zshrc'
 alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
@@ -21,9 +31,6 @@ alias master='git checkout master'
 alias masterp='git checkout master && git pull'
 alias gp='git push'
 alias glg='git log --graph --pretty=format:'"'"'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"'"' --abbrev-commit'
-alias swagger-codegen='java -jar ~/Applications/swagger-codegen-cli-3.0.0-20180717.153005-90.jar'
-alias sp='cd $SP'
-alias ap='cd $AP'
 alias h='cd $HOME'
 
 alias uuidgen='uuidgen | tr "[:upper:]" "[:lower:]"'

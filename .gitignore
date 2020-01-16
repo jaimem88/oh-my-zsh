@@ -1,7 +1,7 @@
 # custom files
 
 myenv-private/
-
+.DS_Store
 # temp files directories
 cache/
 log/

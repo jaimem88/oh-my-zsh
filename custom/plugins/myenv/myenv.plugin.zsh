@@ -1,19 +1,9 @@
 export GPG_TTY=$(tty)
-export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=$(/usr/libexec/java_home)
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin:$JAVA_HOME/bin:/usr/local/Cellar/libpq/9.6.5/bin:$HOME/bin:~/Library/Python/3.6/bin/:/Library/Frameworks/Python.framework/Versions/3.6/bin
-export SP=$GOPATH/src/bitbucket.org/simplepayments
-export AP=$GOPATH/src/github.com/AssemblyPayments
-export JM=$GOPATH/src/github.com/jaimemartinez88
-
-export GOPRIVATE=github.com/AssemblyPayments/*
-
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
+export JM=$GOPATH/src/gitlab.com/jaimem88
 
 # Customise the Powerlevel9k prompts
 export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir newline vcs) 
