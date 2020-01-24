@@ -6,7 +6,7 @@ alias jm='cd $JM'
 # You can use whatever you want as an alias, like for Mondays:
 #eval $(thefuck --alias FUCK)
 alias mk='make'
-
+alias code='codium'
 #GITLAB STUFF
 alias glsite='NO_CONTRACTS=true bundle exec middleman'
 alias grr='gitlab-runner'
@@ -37,7 +37,6 @@ alias glg='git log --graph --pretty=format:'"'"'%Cred%h%Creset -%C(yellow)%d%Cre
 alias h='cd $HOME'
 
 alias uuidgen='uuidgen | tr "[:upper:]" "[:lower:]"'
-alias ls='ls -G'
 alias nyan='nyancat'
 
 
